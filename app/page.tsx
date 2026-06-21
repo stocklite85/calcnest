@@ -9,7 +9,7 @@ const TOOLS = [
   { slug: 'loan-calculator',      emoji: '🏦', category: 'finance', ko: '대출 이자 계산기',   en: 'Loan Interest Calculator',     descKo: '원리금균등·원금균등·만기일시 비교',  descEn: 'Compare loan repayment types' },
   { slug: 'savings-calculator',   emoji: '💰', category: 'finance', ko: '적금 계산기',         en: 'Savings Calculator',            descKo: '월 납입금으로 만기 수령액 계산',    descEn: 'Calculate maturity from deposits' },
   { slug: 'compound-calculator',  emoji: '📈', category: 'finance', ko: '복리 계산기',         en: 'Compound Interest Calculator', descKo: '복리 효과로 목돈 성장 시뮬레이션', descEn: 'Simulate compound growth' },
-  { slug: 'salary-calculator',    emoji: '💼', category: 'finance', ko: '세후 급여 계산기',   en: 'After-tax Salary Calculator',  descKo: '4대보험 공제 후 실수령액',          descEn: 'Calculate take-home pay' },
+  { slug: 'salary-calculator',    emoji: '💼', category: 'finance', ko: '연봉 계산기',        en: 'Annual Salary Calculator',     descKo: '연봉으로 월 실수령액·공제액 계산',  descEn: 'Monthly net pay from annual salary' },
   { slug: 'bmi-calculator',       emoji: '⚖️', category: 'health',  ko: 'BMI 계산기',          en: 'BMI Calculator',                descKo: '체질량지수와 비만도 측정',           descEn: 'Body mass index & obesity level' },
   { slug: 'bmr-calculator',       emoji: '🔥', category: 'health',  ko: '기초대사량 계산기',  en: 'BMR Calculator',                descKo: '하루 기초대사량·권장 칼로리',       descEn: 'Daily BMR & calorie needs' },
   { slug: 'dday-calculator',      emoji: '📅', category: 'date',    ko: 'D-day 계산기',        en: 'D-day Calculator',              descKo: '특별한 날까지 남은 날짜',           descEn: 'Days until a special event' },
