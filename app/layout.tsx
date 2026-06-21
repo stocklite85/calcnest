@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
 import { LangProvider } from '@/contexts/LangContext';
@@ -21,7 +22,10 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   verification: {
     google: 'gFJC8pKAliNeLONrdUMXGG5PsKABSFIcGr6DLkmz6KY',
-    other: { 'naver-site-verification': '757f1145a9b1a882ee186dec878a767b00a56983' },
+    other: {
+      'naver-site-verification': '757f1145a9b1a882ee186dec878a767b00a56983',
+      'google-adsense-account': 'ca-pub-5163207360443663',
+    },
   },
 };
 
@@ -37,6 +41,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
         </LangProvider>
         <Analytics />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5163207360443663"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
