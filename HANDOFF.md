@@ -31,18 +31,43 @@ calcnest/
 ├── app/
 │   ├── globals.css                          ✅ 완성
 │   ├── layout.tsx                           ✅ 완성 (루트 레이아웃, SEO 메타)
-│   ├── page.tsx                             ✅ 완성 (홈 — 계산기 카드 10개, 카테고리 필터)
+│   ├── page.tsx                             ✅ 완성 (홈 — 계산기 카드 11개, 카테고리 필터)
 │   ├── sitemap.ts                           ✅ 완성 (/sitemap.xml 자동 생성)
 │   ├── robots.ts                            ✅ 완성 (/robots.txt 자동 생성)
+│   ├── loan-calculator/                     ✅ 완성
+│   ├── savings-calculator/                  ✅ 완성
+│   ├── compound-calculator/                 ✅ 완성
+│   ├── salary-calculator/                   ✅ 완성 (연봉 계산기)
+│   ├── bmi-calculator/                      ✅ 완성
+│   ├── bmr-calculator/                      ✅ 완성
+│   ├── dday-calculator/                     ✅ 완성
+│   ├── age-calculator/                      ✅ 완성
+│   ├── date-diff-calculator/                ✅ 완성
+│   ├── area-converter/                      ✅ 완성
+│   ├── data-converter/                      ✅ 완성
 │   └── privacy/
 │       └── page.tsx                         ✅ 완성 (개인정보 처리방침 한/영)
 ├── components/
 │   ├── Header.tsx                           ✅ 완성 (로고 + 언어 토글)
-│   └── Footer.tsx                           ✅ 완성 (Privacy Policy 링크)
+│   ├── Footer.tsx                           ✅ 완성 (Privacy Policy 링크)
+│   └── CookieBanner.tsx                     ✅ 완성 (쿠키 동의 배너, 하단 고정)
 ├── contexts/
 │   └── LangContext.tsx                      ✅ 완성 (브라우저 언어 자동 감지 + localStorage)
 ├── lib/
-│   └── translations.ts                      ✅ 완성 (한/영 전체 번역, 10개 계산기 분량)
+│   ├── translations.ts                      ✅ 완성 (한/영 전체 번역)
+│   ├── loan.ts                              ✅ 완성
+│   ├── savings.ts                           ✅ 완성
+│   ├── compound.ts                          ✅ 완성
+│   ├── salary.ts                            ✅ 완성
+│   ├── bmi.ts                               ✅ 완성
+│   ├── bmr.ts                               ✅ 완성
+│   ├── dday.ts                              ✅ 완성
+│   ├── age.ts                               ✅ 완성
+│   ├── dateDiff.ts                          ✅ 완성
+│   ├── area.ts                              ✅ 완성
+│   └── dataConverter.ts                     ✅ 완성
+├── public/
+│   └── ads.txt                              ✅ 완성 (AdSense 광고 인증)
 ├── CLAUDE.md                                ✅ 완성
 └── HANDOFF.md                               ← 이 파일
 ```
@@ -56,13 +81,14 @@ calcnest/
 | 1 | `loan-calculator` | 대출 이자 계산기 | 금융 | ✅ 완성 |
 | 2 | `savings-calculator` | 적금 계산기 | 금융 | ✅ 완성 |
 | 3 | `compound-calculator` | 복리 계산기 | 금융 | ✅ 완성 |
-| 4 | `salary-calculator` | 세후 급여 계산기 | 금융 | ✅ 완성 |
+| 4 | `salary-calculator` | 연봉 계산기 | 금융 | ✅ 완성 (연봉 입력 → 월/연 실수령액) |
 | 5 | `bmi-calculator` | BMI 계산기 | 건강 | ✅ 완성 |
 | 6 | `bmr-calculator` | 기초대사량 계산기 | 건강 | ✅ 완성 |
 | 7 | `dday-calculator` | D-day 계산기 | 날짜 | ✅ 완성 |
 | 8 | `age-calculator` | 나이 계산기 | 날짜 | ✅ 완성 |
 | 9 | `date-diff-calculator` | 날짜 차이 계산기 | 날짜 | ✅ 완성 |
 | 10 | `area-converter` | 평수 변환기 | 생활 | ✅ 완성 |
+| 11 | `data-converter` | 데이터 용량 변환기 | 생활 | ✅ 완성 |
 
 ---
 
@@ -114,7 +140,10 @@ export const metadata: Metadata = {
 | 네이버 서치어드바이저 | ✅ 소유권 인증 완료 (색인 반영 대기) |
 | Google 인증 키 | `gFJC8pKAliNeLONrdUMXGG5PsKABSFIcGr6DLkmz6KY` |
 | 네이버 인증 키 | `757f1145a9b1a882ee186dec878a767b00a56983` |
-| Google AdSense | 🔲 미신청 |
+| Google AdSense | 🟡 심사 진행 중 (publisher ID: ca-pub-5163207360443663) |
+| AdSense 스크립트 | ✅ layout.tsx 삽입 완료 |
+| ads.txt | ✅ public/ads.txt 생성 완료 |
+| 쿠키 동의 배너 | ✅ CookieBanner.tsx 완성 |
 
 ---
 
@@ -133,12 +162,25 @@ export const metadata: Metadata = {
 - [x] `area-converter` — 평수 변환기 (평↔㎡↔ft², 부동산 프리셋)
 
 ### 수익화
-- [ ] Google AdSense 신청 (publisher ID 발급 후 layout.tsx에 글로벌 스크립트 추가)
-- [ ] `components/AdSlot.tsx` 생성 후 각 페이지에 배치
+- [x] AdSense 글로벌 스크립트 layout.tsx 추가
+- [x] ads.txt 생성
+- [x] google-adsense-account 메타태그 추가
+- [x] 쿠키 동의 배너 (CookieBanner.tsx)
+- [ ] **AdSense 심사 승인 대기** — 승인 후 각 페이지에 `<AdSlot slot="슬롯ID" />` 배치
+  - AdSlot 컴포넌트는 ToolNest의 `components/AdSlot.tsx` 참고해서 동일하게 만들 것
 
 ### 검색엔진 등록
-- [ ] Google Search Console 소유권 인증 및 사이트맵 제출
-- [ ] 네이버 서치어드바이저 등록
+- [x] Google Search Console 소유권 인증 완료
+- [x] 네이버 서치어드바이저 소유권 인증 완료
+- [ ] Google Search Console 사이트맵 제출 (`/sitemap.xml`)
+- [ ] 네이버 서치어드바이저 사이트맵 제출
+
+### 추가 계산기 후보 (선택)
+- [ ] 부가세 계산기 (VAT 10%) — 검색량 최상, 구현 쉬움
+- [ ] 백분율 계산기 — 할인율/증가율/비율
+- [ ] 온도 변환기 — 섭씨↔화씨↔켈빈
+- [ ] 퇴직금 계산기 — 한국 특화, 검색량 높음
+- [ ] 전월세 전환율 계산기
 
 ---
 
