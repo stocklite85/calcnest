@@ -110,8 +110,10 @@ export const metadata: Metadata = {
 |------|------|
 | sitemap.xml | ✅ 자동 생성 |
 | robots.txt | ✅ 자동 생성 |
-| Google Search Console | 🔲 미등록 |
-| 네이버 서치어드바이저 | 🔲 미등록 |
+| Google Search Console | ✅ 소유권 인증 완료 (색인 반영 대기) |
+| 네이버 서치어드바이저 | ✅ 소유권 인증 완료 (색인 반영 대기) |
+| Google 인증 키 | `gFJC8pKAliNeLONrdUMXGG5PsKABSFIcGr6DLkmz6KY` |
+| 네이버 인증 키 | `757f1145a9b1a882ee186dec878a767b00a56983` |
 | Google AdSense | 🔲 미신청 |
 
 ---
