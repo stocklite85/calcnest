@@ -148,6 +148,38 @@ const data: Record<string, Record<Lang, string>> = {
   'compound.final': { ko: '최종 금액', en: 'Final Amount' },
   'compound.profit': { ko: '수익', en: 'Profit' },
   'compound.rate.return': { ko: '수익률', en: 'Return Rate' },
+
+  // VAT Calculator
+  'vat.title': { ko: '부가세 계산기', en: 'VAT Calculator' },
+  'vat.desc': { ko: '공급가액 또는 합계금액으로 부가세(10%)를 계산합니다', en: 'Calculate VAT (10%) from supply price or total amount' },
+  'vat.mode.supply': { ko: '공급가액으로 계산', en: 'From Supply Price' },
+  'vat.mode.total': { ko: '합계금액으로 역산', en: 'From Total (Reverse)' },
+  'vat.supply': { ko: '공급가액', en: 'Supply Price' },
+  'vat.vat': { ko: '부가세 (10%)', en: 'VAT (10%)' },
+  'vat.total': { ko: '합계금액', en: 'Total Amount' },
+
+  // Percentage Calculator
+  'pct.title': { ko: '백분율 계산기', en: 'Percentage Calculator' },
+  'pct.desc': { ko: '할인율·증가율·비율 등 백분율 계산', en: 'Calculate discounts, increases & ratios' },
+
+  // Severance Pay Calculator
+  'severance.title': { ko: '퇴직금 계산기', en: 'Severance Pay Calculator' },
+  'severance.desc': { ko: '한국 근로기준법 기준 퇴직금 계산', en: 'Severance pay under Korean Labor Standards Act' },
+  'severance.start': { ko: '입사일', en: 'Start Date' },
+  'severance.end': { ko: '퇴사일', en: 'End Date' },
+  'severance.avgSalary': { ko: '최근 3개월 월평균 급여 (만원)', en: 'Avg Monthly Salary — 3 months (KRW 10k)' },
+  'severance.days': { ko: '재직 일수', en: 'Working Days' },
+  'severance.years': { ko: '재직 기간', en: 'Working Period' },
+  'severance.dailyWage': { ko: '일 평균임금', en: 'Daily Avg Wage' },
+  'severance.amount': { ko: '퇴직금', en: 'Severance Pay' },
+  'severance.ineligible': { ko: '재직기간이 1년 미만으로 퇴직금이 발생하지 않습니다.', en: 'Less than 1 year — not eligible for severance pay.' },
+
+  // Temperature Converter
+  'temp.title': { ko: '온도 변환기', en: 'Temperature Converter' },
+  'temp.desc': { ko: '섭씨 ↔ 화씨 ↔ 켈빈 단위 변환', en: 'Convert between Celsius, Fahrenheit and Kelvin' },
+  'temp.celsius': { ko: '섭씨 (°C)', en: 'Celsius (°C)' },
+  'temp.fahrenheit': { ko: '화씨 (°F)', en: 'Fahrenheit (°F)' },
+  'temp.kelvin': { ko: '켈빈 (K)', en: 'Kelvin (K)' },
 };
 
 export function t(lang: Lang, key: string): string {

@@ -16,7 +16,11 @@ const TOOLS = [
   { slug: 'age-calculator',       emoji: '🎂', category: 'date',    ko: '나이 계산기',         en: 'Age Calculator',                descKo: '만 나이·한국 나이 한번에',          descEn: 'International & Korean age' },
   { slug: 'date-diff-calculator', emoji: '🗓️', category: 'date',    ko: '날짜 차이 계산기',   en: 'Date Difference Calculator',   descKo: '두 날짜 사이 일·주·월·년 계산',    descEn: 'Days, weeks, months between dates' },
   { slug: 'area-converter',       emoji: '🏠', category: 'living',  ko: '평수 변환기',         en: 'Area Converter',                descKo: '평 ↔ ㎡ ↔ ft² 단위 변환',         descEn: 'Convert Pyeong, ㎡ and ft²' },
-  { slug: 'data-converter',      emoji: '💾', category: 'living',  ko: '데이터 용량 변환기',  en: 'Data Unit Converter',           descKo: 'Bit · KB · MB · GB · TB 변환',   descEn: 'Convert Bit, KB, MB, GB, TB' },
+  { slug: 'data-converter',        emoji: '💾', category: 'living',   ko: '데이터 용량 변환기', en: 'Data Unit Converter',          descKo: 'Bit · KB · MB · GB · TB 변환',        descEn: 'Convert Bit, KB, MB, GB, TB' },
+  { slug: 'vat-calculator',        emoji: '🧾', category: 'finance',  ko: '부가세 계산기',       en: 'VAT Calculator',               descKo: '공급가액·부가세(10%)·합계 자동 계산',   descEn: 'Calculate supply price, VAT and total' },
+  { slug: 'percentage-calculator', emoji: '📊', category: 'finance',  ko: '백분율 계산기',       en: 'Percentage Calculator',        descKo: '할인율·증가율·비율 등 백분율 계산',      descEn: 'Calculate discounts, increases & ratios' },
+  { slug: 'severance-calculator',  emoji: '📋', category: 'finance',  ko: '퇴직금 계산기',       en: 'Severance Pay Calculator',     descKo: '근로기준법 기준 퇴직금 계산',            descEn: 'Severance pay under Korean Labor Law' },
+  { slug: 'temperature-converter', emoji: '🌡️', category: 'living',   ko: '온도 변환기',         en: 'Temperature Converter',        descKo: '섭씨 ↔ 화씨 ↔ 켈빈 단위 변환',        descEn: 'Convert Celsius, Fahrenheit & Kelvin' },
 ] as const;
 
 type Category = 'all' | 'finance' | 'health' | 'date' | 'living';

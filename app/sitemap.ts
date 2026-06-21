@@ -14,6 +14,10 @@ const SLUGS = [
   'date-diff-calculator',
   'area-converter',
   'data-converter',
+  'vat-calculator',
+  'percentage-calculator',
+  'severance-calculator',
+  'temperature-converter',
   'privacy',
 ];
 
