@@ -57,12 +57,12 @@ calcnest/
 | 2 | `savings-calculator` | 적금 계산기 | 금융 | ✅ 완성 |
 | 3 | `compound-calculator` | 복리 계산기 | 금융 | ✅ 완성 |
 | 4 | `salary-calculator` | 세후 급여 계산기 | 금융 | ✅ 완성 |
-| 5 | `bmi-calculator` | BMI 계산기 | 건강 | 🔲 미구현 |
-| 6 | `bmr-calculator` | 기초대사량 계산기 | 건강 | 🔲 미구현 |
-| 7 | `dday-calculator` | D-day 계산기 | 날짜 | 🔲 미구현 |
-| 8 | `age-calculator` | 나이 계산기 | 날짜 | 🔲 미구현 |
-| 9 | `date-diff-calculator` | 날짜 차이 계산기 | 날짜 | 🔲 미구현 |
-| 10 | `area-converter` | 평수 변환기 | 생활 | 🔲 미구현 |
+| 5 | `bmi-calculator` | BMI 계산기 | 건강 | ✅ 완성 |
+| 6 | `bmr-calculator` | 기초대사량 계산기 | 건강 | ✅ 완성 |
+| 7 | `dday-calculator` | D-day 계산기 | 날짜 | ✅ 완성 |
+| 8 | `age-calculator` | 나이 계산기 | 날짜 | ✅ 완성 |
+| 9 | `date-diff-calculator` | 날짜 차이 계산기 | 날짜 | ✅ 완성 |
+| 10 | `area-converter` | 평수 변환기 | 생활 | ✅ 완성 |
 
 ---
 
@@ -125,12 +125,12 @@ export const metadata: Metadata = {
 - [x] `savings-calculator` — 적금 계산기 (일반과세/비과세)
 - [x] `compound-calculator` — 복리 계산기 (연/월 복리)
 - [x] `salary-calculator` — 세후 급여 계산기 (2025년 4대보험 기준)
-- [ ] `bmi-calculator` — BMI 계산기
-- [ ] `bmr-calculator` — 기초대사량 계산기
-- [ ] `dday-calculator` — D-day 계산기
-- [ ] `age-calculator` — 나이 계산기
-- [ ] `date-diff-calculator` — 날짜 차이 계산기
-- [ ] `area-converter` — 평수 변환기
+- [x] `bmi-calculator` — BMI 계산기 (BMI 구간 시각화 바, 정상체중 범위 표시)
+- [x] `bmr-calculator` — 기초대사량 계산기 (Mifflin-St Jeor, 활동량 5단계)
+- [x] `dday-calculator` — D-day 계산기 (수능/크리스마스/새해 프리셋)
+- [x] `age-calculator` — 나이 계산기 (만/한국/연 나이 + 살아온 날 + 다음생일)
+- [x] `date-diff-calculator` — 날짜 차이 계산기 (일/주/월/년)
+- [x] `area-converter` — 평수 변환기 (평↔㎡↔ft², 부동산 프리셋)
 
 ### 수익화
 - [ ] Google AdSense 신청 (publisher ID 발급 후 layout.tsx에 글로벌 스크립트 추가)
