@@ -5,8 +5,8 @@
 무료 생활 계산기 모음 웹사이트. 수익화 목적(Google AdSense 예정).
 한국어/영어 2개 언어 지원. 서버 비용 0원.
 
-**GitHub:** (설정 후 기입)
-**배포 URL:** https://calcnest.vercel.app
+**GitHub:** https://github.com/stocklite85/calcnest
+**배포 URL:** https://calcnest-sigma.vercel.app
 **배포 방식:** Vercel 무료 플랜 — `git push` 시 자동 재배포 (가끔 실패 시 `vercel --prod` 직접 실행)
 
 ---
@@ -53,10 +53,10 @@ calcnest/
 
 | # | 슬러그 | 이름 | 카테고리 | 상태 |
 |---|--------|------|----------|------|
-| 1 | `loan-calculator` | 대출 이자 계산기 | 금융 | 🔲 미구현 |
-| 2 | `savings-calculator` | 적금 계산기 | 금융 | 🔲 미구현 |
-| 3 | `compound-calculator` | 복리 계산기 | 금융 | 🔲 미구현 |
-| 4 | `salary-calculator` | 세후 급여 계산기 | 금융 | 🔲 미구현 |
+| 1 | `loan-calculator` | 대출 이자 계산기 | 금융 | ✅ 완성 |
+| 2 | `savings-calculator` | 적금 계산기 | 금융 | ✅ 완성 |
+| 3 | `compound-calculator` | 복리 계산기 | 금융 | ✅ 완성 |
+| 4 | `salary-calculator` | 세후 급여 계산기 | 금융 | ✅ 완성 |
 | 5 | `bmi-calculator` | BMI 계산기 | 건강 | 🔲 미구현 |
 | 6 | `bmr-calculator` | 기초대사량 계산기 | 건강 | 🔲 미구현 |
 | 7 | `dday-calculator` | D-day 계산기 | 날짜 | 🔲 미구현 |
@@ -119,14 +119,14 @@ export const metadata: Metadata = {
 ## 다음 AI가 할 일
 
 ### 우선순위 높음 (계산기 구현)
-- [ ] `loan-calculator` — 대출 이자 계산기 (검색량 최상)
-- [ ] `bmi-calculator` — BMI 계산기 (검색량 최상)
-- [ ] `dday-calculator` — D-day 계산기 (검색량 높음)
-- [ ] `age-calculator` — 나이 계산기
-- [ ] `savings-calculator` — 적금 계산기
-- [ ] `salary-calculator` — 세후 급여 계산기
+- [x] `loan-calculator` — 대출 이자 계산기 (원리금균등/원금균등/만기일시 + 상환 스케줄)
+- [x] `savings-calculator` — 적금 계산기 (일반과세/비과세)
+- [x] `compound-calculator` — 복리 계산기 (연/월 복리)
+- [x] `salary-calculator` — 세후 급여 계산기 (2025년 4대보험 기준)
+- [ ] `bmi-calculator` — BMI 계산기
 - [ ] `bmr-calculator` — 기초대사량 계산기
-- [ ] `compound-calculator` — 복리 계산기
+- [ ] `dday-calculator` — D-day 계산기
+- [ ] `age-calculator` — 나이 계산기
 - [ ] `date-diff-calculator` — 날짜 차이 계산기
 - [ ] `area-converter` — 평수 변환기
 
