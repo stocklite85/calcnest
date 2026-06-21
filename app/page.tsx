@@ -16,6 +16,7 @@ const TOOLS = [
   { slug: 'age-calculator',       emoji: '🎂', category: 'date',    ko: '나이 계산기',         en: 'Age Calculator',                descKo: '만 나이·한국 나이 한번에',          descEn: 'International & Korean age' },
   { slug: 'date-diff-calculator', emoji: '🗓️', category: 'date',    ko: '날짜 차이 계산기',   en: 'Date Difference Calculator',   descKo: '두 날짜 사이 일·주·월·년 계산',    descEn: 'Days, weeks, months between dates' },
   { slug: 'area-converter',       emoji: '🏠', category: 'living',  ko: '평수 변환기',         en: 'Area Converter',                descKo: '평 ↔ ㎡ ↔ ft² 단위 변환',         descEn: 'Convert Pyeong, ㎡ and ft²' },
+  { slug: 'data-converter',      emoji: '💾', category: 'living',  ko: '데이터 용량 변환기',  en: 'Data Unit Converter',           descKo: 'Bit · KB · MB · GB · TB 변환',   descEn: 'Convert Bit, KB, MB, GB, TB' },
 ] as const;
 
 type Category = 'all' | 'finance' | 'health' | 'date' | 'living';

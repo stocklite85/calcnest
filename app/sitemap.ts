@@ -13,6 +13,7 @@ const SLUGS = [
   'age-calculator',
   'date-diff-calculator',
   'area-converter',
+  'data-converter',
   'privacy',
 ];
 
