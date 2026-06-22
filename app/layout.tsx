@@ -6,6 +6,7 @@ import { LangProvider } from '@/contexts/LangContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 export const metadata: Metadata = {
   title: {
@@ -42,6 +43,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <CookieBanner />
         </LangProvider>
+        <GoogleAnalytics
+          measurementId="G-VYWGBQG12R"
+          storageKey="calcnest-cookie-consent"
+        />
         <Analytics />
         <Script
           async

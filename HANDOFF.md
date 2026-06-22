@@ -148,6 +148,7 @@ export const metadata: Metadata = {
 | AdSense 스크립트 | ✅ layout.tsx 삽입 완료 |
 | ads.txt | ✅ public/ads.txt 생성 완료 |
 | 쿠키 동의 배너 | ✅ CookieBanner.tsx 완성 |
+| Google Analytics 4 | ✅ 적용 완료 (`G-VYWGBQG12R`, 쿠키 동의 후 로드) |
 
 ---
 
